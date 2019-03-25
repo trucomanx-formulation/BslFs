@@ -1,5 +1,5 @@
 function [STD MEAN AVD STDF h]=func_dir_std_1time(DIRROOT,varargin)
-
+    REGION='REGION'
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     h=get_fir_filter(40,0.5,'high');
     %[AH FREQN]=freqmod(h,40);
@@ -10,7 +10,7 @@ function [STD MEAN AVD STDF h]=func_dir_std_1time(DIRROOT,varargin)
     STDF=0;    STD=0;
     MEAN=0;    AVD=0;
 
-        DIR=fullfile(DIRROOT,'ROI');
+        DIR=fullfile(DIRROOT,REGION);
         %% To filenames: 'img1coffee.bmp', 'img2coffee,bmp', ..., 'img100coffee.bmp'
         DATA = datapack(DIR,'%d',1,512,'bmp');
         
