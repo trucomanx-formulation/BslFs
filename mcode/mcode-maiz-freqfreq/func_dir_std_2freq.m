@@ -20,14 +20,15 @@ function [STD MEAN AVD STDF h]=func_dir_std_2freq(DIRROOT,NUM,OUTPUT,FACTOR)
     %% To filenames: 'img1coffee.bmp', 'img2coffee,bmp', ..., 'img100coffee.bmp'
     DATA = datapack(DIR,'%d',1,512,'bmp');
     %DATA=DATA(180:(end-100),150:(end-150),:);
-    
+
     %% pkg load image
-    %% FF = fspecial("average", 3);
+    %% FF = fspecial("average", 3);    
 
     [C D E]=stdcont(DATA,'off');
     %% D = imfilter(D, FF);
     %% E = imfilter(E, FF);
 
+    %DMAX=0;
     imagesc(E); title('MEAN')  
     colormap(jet);
     colorbar;
@@ -40,7 +41,6 @@ function [STD MEAN AVD STDF h]=func_dir_std_2freq(DIRROOT,NUM,OUTPUT,FACTOR)
     FileName=fullfile(OUTPUT,[num2str(NUM) 'fps'],'STD.eps');
     print(gcf,FileName,'-depsc')
 
-    DMAX=0;
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     for II=1:N   
         [DATAF DATA1] = firfilterbank(DATA,H{II},'MODE0');
@@ -48,13 +48,13 @@ function [STD MEAN AVD STDF h]=func_dir_std_2freq(DIRROOT,NUM,OUTPUT,FACTOR)
 
         [C D E]=stdcont(DATAF,'off');
 
-        %D = imfilter(D, FF);
+        %% D = imfilter(D, FF);
 
         imagesc(D);  
         colormap(jet);
-        if II==1
+        %if II==1
             DMAX=max(max(D));
-        endif
+        %endif
 
         NCOLORS=256;
         Dind = gray2ind(D/DMAX, NCOLORS);
