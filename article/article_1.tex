@@ -11,7 +11,7 @@
 %\usepackage{lineno}
 %\modulolinenumbers[5]
 
-\journal{Optics Communications}
+\journal{Optics and Lasers in Engineering}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% Elsevier bibliography styles
@@ -60,15 +60,15 @@
 
 \begin{frontmatter}
 
-\title{Sampling Frequency in the Dynamic Speckle Analysis}
+\title{Sampling Rate in the Dynamic Speckle Analysis}
 %\tnotetext[mytitlenote]{Fully documented templates are available in the 
 %elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
 
 
 
 % Group authors per affiliation:
-\author{Rivera, F. P.}
-\author{Pe\~na, R. G.}
+\author{Pujaico~Rivera, F.}
+\author{Gonzalez-Pe\~na, R. J.}
 \author{Braga, R. A.}
 
 
@@ -80,24 +80,23 @@
 
 
 \begin{abstract}
-In this article, we show as the variation of sampling frequency, 
-in a dynamic speckle analysis, affects the value of some dynamic speckle index, 
-to the cases of the absolute value of the differences index, the temporal 
-speckle standard deviation index and the temporal 
-speckle mean index.
-We show that  the dynamic speckle index value change the maximum excursion with 
-the variation of sampling frequency, affected directly by the time integration 
+In this article, we show as the variation of sampling rate, 
+in a dynamic speckle analysis, affects the value of some dynamic speckle indexes, 
+to the cases of the absolute value of the differences index, 
+the temporal speckle standard deviation index and the temporal speckle mean index.
+We show that  the dynamic speckle index value changes its maximum excursion with 
+the variation of sampling rate, affected directly by the time integration 
 (exposition time) of camera.
 We highlight the importance of knowing  the frequency band of analyzed phenomenon, 
-in order to choose the appropriate sampling frequency, 
-being recommendable to use the minimal sampling frequency possible
+in order to choose the appropriate sampling rate, 
+being recommendable to use the minimal sampling rate possible
 to get an acceptable maximum excursion, 
 and an illumination level with good signal-noise ratio.
 
 \end{abstract}
 
 \begin{keyword}
-Sampling frequency \sep
+Sampling rate \sep
 Dynamic speckle index \sep 
 Dynamic speckle index \sep 
 Dynamic speckle analysis
@@ -129,14 +128,14 @@ It  was showed the dependence between the index value and the illumination level
 Thus, 
 it is necessary analyze the effect of technical parameters that affect the perceived illumination level; 
 in these sense,
-we analyze the effect of sampling frequency, 
+we analyze the effect of sampling rate, 
 and consequently the time exposure, in a dynamic laser speckle analysis
 that use: the absolute value of the differences index, 
 the temporal speckle standard deviation index and the temporal speckle mean index \cite{Nothdurft:05}. 
 
 %4) Relevancia do artigo(importancia para outros del artigo publicado)
-Knowing the effect of sampling frequency over an index value,
-a researcher will be able to have a criteria to choose the appropriate sampling frequency 
+Knowing the effect of sampling rate over an index value,
+a researcher will be able to have a criteria to choose the appropriate sampling rate
 for a certain monitored phenomenon. 
 % Thus,
 % optimizing resources when choosing the hardware specification in a system setup; 
@@ -144,9 +143,9 @@ for a certain monitored phenomenon.
 
 %5) Anuncie a hipotesis
 For this purpose, we show that given a dynamic speckle test, exists an appropriate frequency band
-to the sampling frequency. High values of sampling rate may cause unintended consequences on the index value, 
+to the sampling rate. High values of sampling rate may cause unintended consequences on the index value, 
 such as the decrease of the excursion between two activity levels, given a determinate index value. 
-In turn, decreasing the sampling frequency promoted by the increasing of the exposure time,
+In turn, decreasing the sampling rate promoted by the increasing of the exposure time,
 will cause a reduction of the temporal speckle contrast,
  and consequently limit the possibility  to get information from the sample.  
 
@@ -176,7 +175,7 @@ conclusion in the Section 6.
 
 \subsection{Time exposure of the camera}
 \label{subsec:expositiontime}
-The sampling frequency ($F_s$) or acquisition time in frames per second ($fps$), 
+The sampling rate ($F_s$) or acquisition time in frames per second ($fps$), 
 in the camera Marlin F-033 is obtained using the 
  Table \ref{table:1}, 
 \begin{table}[h!]
@@ -191,7 +190,7 @@ in the camera Marlin F-033 is obtained using the
  832   & 20  & 12  & 16.652  & 60.053  \\ [1ex] 
  \hline
 \end{tabular}
-\caption{Exposition time and sampling frequency}
+\caption{Exposition time and sampling rate}
 \label{table:1}
 \end{table}
 where we can see the 4 sampling frequencies that will be used in the tests;
@@ -457,7 +456,7 @@ Section \ref{subsec:test1}.
 The Figure \ref{fig:stdraw} shows the  behavior of $STD(t)$ index, in each time $t$, 
 to 4 different sampling rates. Remembering that this index uses information in the entire frequency
 band ($0$ until $F_s/2$ Hz), as seen in Section \ref{sec:std}.
-This index shows a different behavior in time to each sampling frequency,
+This index shows a different behavior in time to each sampling rate,
 so that, the value of the index in each time  decreases in proportion with 
 the grow of sampling rate. By other side,
 Figure \ref{fig:stdnorm} shows a normalized version of $STD(t)$ index;
@@ -499,7 +498,7 @@ the grow of sampling rate. By other side,
 Figure \ref{fig:stdfnorm} shows a normalized version of $STDF(t)$ index;
 being the unit, the maximum value of curves; thus,
 it can be seen that exists a considerable difference between the maximum excursion 
-of the curves with the use of sampling frequency; so, it is possible to observe a 
+of the curves with the use of sampling rate; so, it is possible to observe a 
 grow of the maximum excursion when the sampling rate decrease, like the $AVD(t)$ index.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -519,7 +518,7 @@ decreasing its value
     \caption{$MEAN$ index value in the germinated corn seed.}\label{fig:MEANtest2}
 \end{figure}
 %We observe as the index decrease your value, 
-with the increment of sampling frequency, %in the datapack,
+with the increment of sampling rate, %in the datapack,
 where from %so that between 
 $15$ Hz to $60$ Hz, the index value reached the $20.137\%$ of its value.
 
@@ -581,7 +580,7 @@ that goes from dark blue (low values) to dark red color (high values),
 linked to the values of activity,
 %in each pixel in all matrices, as It is shown in the top of table. 
 it is evident how the index values decreases with
-the increment of frequency sampling $F_s$.
+the increment of sampling rate $F_s$.
 %in each one of 8 frequency bands, 
 The index values also decrease with the increment of the position of frequency band,
 being  a frequency band between $0$ Hz and $3.75$ Hz with a sampling rate of $15$ hz,
@@ -601,7 +600,7 @@ the better analysis's case; in the sense of better differentiating places of low
 %In the results seen in Section \ref{sec:numericalresults}, we can observe in 
 In the Figure \ref{fig:MEANtest1} and \ref{fig:MEANtest2}, 
 %that 
-the indexes show a relation between the profile of mean index curve and the sampling frequency of datapack. 
+the indexes show a relation between the profile of mean index curve and the sampling rate of datapack. 
 %How is known \cite{Nothdurft:05}, 
 The temporal speckle mean index (Fig. \ref{fig:MEANtest1}) is related to 
 the observed illumination level in the surface of the material \cite{Nothdurft:05} and  
@@ -614,7 +613,7 @@ This is because that the exposition time is modified with the alteration of samp
 %see Section \ref{subsec:expositiontime}, 
 so that less lighting is used to take the picture and consequently the 
 temporal speckle mean index decrease in  its value.
-In this sense, it is important to be aware to choose a sampling frequency
+In this sense, it is important to be aware to choose a sampling rate
 that gives us an index value superior to the noise level of test or to the quantization level of the camera.
 
 
@@ -622,11 +621,11 @@ The modification of exposition time also affects  and limits other indexes,
 remember that we have a quantization level between $0$ and $255$ in the camera. 
 We can see this interference in the Figures \ref{fig:AVDtest1}, \ref{fig:STDtest1}, \ref{fig:STDFtest1} and \ref{fig:INDEXtest2}, 
 where the $AVD(t)$, $STD(t)$ and $STDF(t)$ indexes decrease their values in concordance with the decrease of exposition time.
-Other way in that  the sampling frequency affects the values of indexes,
+Other way in that  the sampling rate affects the values of indexes,
 can be seen in the limitation of
 %It is that, it limits 
 the frequency band of an analyzed signal; for example,
-a sampling frequency $F_s$, by the Nyquist theorem \cite{Nyquist,Shannon}, 
+a sampling rate $F_s$, by the Nyquist theorem \cite{Nyquist,Shannon}, 
 causes  the limitation of  frequency band %of analyzed signal (datapack)  will be 
 between $0 Hz$ and $F_s/2~Hz$.
 Thus, in this context we have an index as $STD(t)$ that uses information between $\langle \left. 0, F_s/2 \right ] Hz$, 
@@ -653,18 +652,17 @@ where we can see  the major values of indexes are obtained
 from $0$ Hz and $7.5$ Hz, when $F_s=15$ Hz. 
 
 Thus, at this point,
-an question is evident: 
+a question is evident: 
 What is the best frequency band? According with the test of corn seed, 
 we see that for all frequency bands, 
-the best range, 
-is the one with the components with lowest possible frequencies; 
+the best range is the one with the components with lowest frequencies; 
 but without forget that given a $STD(t)$ analysis, 
 this index extract information of inner parts of material \cite{Nothdurft:05}, 
-and this information decrease jointly with the decrease of frequency band,
+and this information decreases jointly with the decrease of frequency band,
 as can be seen when compared the result in the excursion of $STD(t)$, 
-with frequency components in low frequencies,
-and the excursion of $\{$ $STDF(t)$ and $AVD(t)$ $\}$, 
-with frequency components in high frequencies;
+with components in low frequencies,
+and the excursion of \{$STDF(t)$ and $AVD(t)$\}, 
+with components in high frequencies;
 so that we need to choose a compromise between the desired quantity of inner information in the sample, 
 the perceived illumination level and the sampling rate.
 
@@ -677,7 +675,7 @@ the perceived illumination level and the sampling rate.
 In this work were presented comparisons of three dynamic laser speckle indexes,
 subject to different values of sampling rate.
 thus we conclude that it is important to choose an appropriate sampling rate, 
-being recommendable to use the minimal sampling frequency possible to get an acceptable maximum excursion, 
+being recommendable to use the minimal sampling rate possible to get an acceptable maximum excursion, 
 in index as the $AVD$ and $STDF$,
 and an illumination level in the images with good signal-noise relation,
 so that the phenomenon under study can be collected in the chosen analysis frequency band.

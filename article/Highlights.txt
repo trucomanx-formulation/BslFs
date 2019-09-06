@@ -1,0 +1,3 @@
+* We show as sampling rate affects the value of some dynamic speckle indexes.
+* The speckle index changes its maximum excursion with the variation of sampling rate.
+* The sampling rate should be the minimum possible with a maximum excursion.
